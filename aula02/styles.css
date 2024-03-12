@@ -1,0 +1,135 @@
+:root {
+  --text: #050315;
+  --background: #fbfbfe;
+  --primary: #2f27ce;
+  --secondary: #dedcff;
+  --accent: #433bff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+/* 
+h1,
+h2,
+h3 {
+  color: red;
+} */
+
+button:focus {
+  outline: 2px solid var(--accent);
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: '*';
+  color: brown;
+}
+
+.p-1 {
+  color: var(--secondary);
+}
+
+.p-2 {
+  color: var(--primary);
+}
+
+.p-3 {
+  font-size: 16px;
+}
+
+/* .list-container .list li {
+  color: gray;
+} */
+
+.list li {
+  color: gray;
+}
+
+.btn {
+  width: 200px;
+  height: 42px;
+  padding: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid rgb(210, 80, 5);
+  cursor: pointer;
+  margin: 8px 0px;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--accent);
+}
+
+.btn.btn-secondary {
+  background-color: var(--secondary);
+}
+
+.btn.btn-secondary:hover {
+  opacity: 0.8;
+}
+
+/* .d-inline {
+  display: inline;
+} */
+
+.arrow-up-container {
+  position: absolute;
+  bottom: 12px;
+  right: 10%;
+}
+
+.message-container {
+  position: relative;
+  margin: 24px 12px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: var(--primary);
+  height: 48px;
+  width: 48px;
+}
+
+.message-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  color: white;
+  font-size: 10px;
+}
